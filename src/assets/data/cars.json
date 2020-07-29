@@ -1,0 +1,65 @@
+{ "information" : "My Cars",
+  "cars":  {
+	"New": [ 
+	{	"make" : "Honda",
+		"type" : "CR-V",
+		"engine" : "gas",
+		"cost" : 4000,
+		"color" : "silver"
+	},
+	{	"make" : "VW",
+		"type" : "Bug",
+		"engine" : "gas",
+		"cost" : 2400,
+		"color" : "red"
+	},
+	{	"make" : "GMC",
+		"type" : "Suburban",
+		"engine" : "diesel",
+		"cost" : 1800,
+		"color" : "brown"
+	},
+	{	"make" : "Toyota",
+		"type" : "RAV 4",
+		"engine" : "gas",
+		"cost" : 5000,
+		"color" : "black"
+	},
+	{	"make" : "GM",
+		"type" : "Cadillac",
+		"engine" : "gas",
+		"cost" : 7000,
+		"color" : "silver"
+	}
+	],
+	"Used": [ 
+	{	"make" : "VW",
+		"type" : "Bug",
+		"engine" : "diesel",
+		"cost" : 12000,
+		"tag"	: false,
+		"color" : "blue"
+		},
+	{	"make" : "GMC",
+		"type" : "Suburban",
+		"engine" : "diesel",
+		"cost" : 10000,
+		"tag" : true,
+		"color" : "red" 
+	},
+	{	"make" : "FORD",
+		"type" : "F150",
+		"engine" : "diesel",
+		"cost" : 20000,
+		"tag" : true,
+		"color" : "silver"
+	},	
+	{	"make" : "HYUNDAI",
+		"type" : "Elantra",
+		"engine" : "gas",
+		"cost" : 10000,
+		"tag" : false,
+		"color" : "gray"
+	}
+	] }
+}

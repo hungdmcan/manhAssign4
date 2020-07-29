@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MyBio } from './models/MyBio';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'manhAssign4';
+  title = 'Manh Hung Dao';
+  myBio: MyBio = { name: 'Manh Hung Dao (Mike)', studentID: '991557299', imageLocation: '../assets/images/vietnam.png', status: 'Junior'};
 }
