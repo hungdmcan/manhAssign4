@@ -1,0 +1,23 @@
+.mat-tab-label-content {
+  display: block;
+}
+
+table {
+  width: 50%;
+  text-align: center;
+  background-color: lightblue;
+  border: solid 3px blue;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+tr, td {
+  width: 50%;
+  font-weight: bold;
+}
+
+img {
+  width: 100px;
+  height: 60px;
+}

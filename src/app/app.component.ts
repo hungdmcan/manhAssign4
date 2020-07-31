@@ -8,5 +8,9 @@ import { MyBio } from './models/MyBio';
 })
 export class AppComponent {
   title = 'Manh Hung Dao';
-  myBio: MyBio = { name: 'Manh Hung Dao (Mike)', studentID: '991557299', imageLocation: '../assets/images/vietnam.png', status: 'Junior'};
+  myBio: MyBio =
+  { name: 'Manh Hung Dao (Mike)',
+  studentID: '991557299',
+  imageLocation: '../assets/images/vietnam.png',
+  status: 'Junior'};
 }

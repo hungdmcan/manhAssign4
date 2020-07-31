@@ -1,17 +1,63 @@
 <!-- Manh Hung Dao - 991557299 -->
-<mat-tab-group mat-stretch-tabs>
-  <mat-tab label = "My Course"></mat-tab>
-  <mat-tab>
-    <mat-icon color="accent">info</mat-icon>
-    //newline
-    My Info
+<mat-tab-group mat-stretch-tabs class="example-stretched-tabs mat-elevation-z4">
+  <mat-tab label = "My Course"  >
+    <ul>
+      <li *ngFor="let course of mycourses; let i=index" id="s{{i}}" (click)="onClickMe(i)">
+          {{course.courseName}}
+          <div id='d{{i}}' [ngStyle]='{display: showHideText(i)}'>
+            <strong>Course Name:</strong> {{course.courseName}}<br>
+            <strong>Credits:</strong> {{course.credits}}<br>
+            <strong>Description:</strong> {{course.description}}<br>
+          </div>
+      </li>
+    </ul>
   </mat-tab>
   <mat-tab>
     <ng-template mat-tab-label>
-      <mat-icon color="accent">car</mat-icon>
-      &nbsp;&nbsp; Display New or Used Cars &nbsp;&nbsp;
-      <mat-icon color="primary">car</mat-icon>
+        <div>
+        <mat-icon color="primary">info</mat-icon>
+        </div>
+
+        <div>
+        My Info
+        </div>
+
       </ng-template>
+      <table>
+          <tr>
+            <td>Student Name:</td>
+            <td>{{author.name}}</td>
+          </tr>
+          <tr>
+            <td>Student ID:</td>
+            <td>{{author.studentID}}</td>
+          </tr>
+          <tr>
+            <td>Student Status: </td>
+            <td>{{author.status}}</td>
+          </tr>
+          <tr>
+            <td>Image:  </td>
+            <td><img src="{{author.imageLocation}}"></td>
+          </tr>
+
+
+
+
+    </table>
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon color="accent">directions_car</mat-icon>
+      &nbsp;&nbsp; Display New or Used Cars &nbsp;&nbsp;
+      <mat-icon color="primary">electric_car</mat-icon>
+      </ng-template>
+      <button mat-icon-button>
+        <mat-icon color="primary">electric_car</mat-icon> </button>
+        <button mat-stroked-button>Stroked with ICON on right
+        <mat-icon color="accent">directions_car</mat-icon> </button>
+        <button mat-stroked-button>Stroked with ICON underneath<br>
+        <mat-icon color="warn">android</mat-icon> </button>
   </mat-tab>
 
 
