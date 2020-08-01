@@ -6,6 +6,10 @@
 */
 {
   "files": [],
+  "lib": [],
+  "resolveJsonModule": true,
+  "esModuleInterop": true,
+  "allowSyntheticDefaultImports": true,
   "references": [
     {
       "path": "./tsconfig.app.json"

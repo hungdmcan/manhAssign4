@@ -2,8 +2,12 @@
   display: block;
 }
 
+.mat-icon {
+  vertical-align: middle;
+}
+
 table {
-  width: 50%;
+  min-width: 50%;
   text-align: center;
   background-color: lightblue;
   border: solid 3px blue;
@@ -20,4 +24,12 @@ tr, td {
 img {
   width: 100px;
   height: 60px;
+}
+
+button {
+  margin: auto;
+  display: flexbox;
+  align-items: center;
+  line-height: 3;
+
 }

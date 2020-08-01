@@ -1,5 +1,7 @@
+import { Car } from './models/carInterface';
 import { Component } from '@angular/core';
 import { MyBio } from './models/MyBio';
+import cars from '../assets/data/cars.json';
 
 @Component({
   selector: 'app-root',
@@ -13,4 +15,7 @@ export class AppComponent {
   studentID: '991557299',
   imageLocation: '../assets/images/vietnam.png',
   status: 'Junior'};
+
+  cat1 = cars.cars.New;
+  cat2 = cars.cars.Used;
 }
