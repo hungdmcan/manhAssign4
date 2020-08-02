@@ -1,10 +1,19 @@
 <!-- Manh Hung Dao - 991557299 -->
 <mat-tab-group mat-stretch-tabs class="example-stretched-tabs mat-elevation-z4">
-  <mat-tab label = "My Course" (click)="resetView()" >
+  <mat-tab (click)="resetView()" >
+    <ng-template mat-tab-label>
+      <div>
+        <mat-icon color = "primary">library_books</mat-icon>
+      </div>
+      <div>
+        My Course
+        </div>
+
+      </ng-template>
     <ul>
       <li *ngFor="let course of mycourses; let i=index" id="s{{i}}" (click)="onClickMe(i)">
           {{course.courseName}}
-          <div id='d{{i}}' [ngStyle]='{display: showHideText(i)}'>
+          <div id='d{{i}}' [ngStyle]='{display: showHideText(i), color: "blue"}'>
             <strong>Course Name:</strong> {{course.courseName}}<br>
             <strong>Credits:</strong> {{course.credits}}<br>
             <strong>Description:</strong> {{course.description}}<br>
@@ -52,16 +61,19 @@
       &nbsp;&nbsp; Display New or Used Cars &nbsp;&nbsp;
       <mat-icon color="primary">electric_car</mat-icon>
       </ng-template>
-      <button mat-stroked-button (click)="displayJSON('Used')">
-        <mat-icon color="warn">directions_car</mat-icon>Old Cars </button>
+      <div id="menu">
+      <button id = "btnLeft" mat-stroked-button (click)="displayJSON('Used')">
+        <mat-icon color="warn">directions_car</mat-icon>Used Cars </button>
         <span></span>
-      <button mat-icon-button (click)="displayJSON('New')"> New Cars
+      <button id = "btnRight" mat-icon-button  (click)="displayJSON('New')"> New Cars
         <mat-icon color="primary">electric_car</mat-icon>  </button>
-
-        <div id="list">
-          <p [innerHTML]="outArea"></p>
-          </div>
+      </div>
+        <div >
+          <div id="listTitle" [ngStyle] = "{'text-alignment': 'center'}" [innerHTML]="outArea1"></div>
+          <div id="list" [ngStyle] = "{'text-alignment': 'center'}" [innerHTML]="outArea"></div>
+        </div>
   </mat-tab>
 
 
 </mat-tab-group>
+

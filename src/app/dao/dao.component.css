@@ -1,6 +1,15 @@
 .mat-tab-label-content {
   display: block;
 }
+.mat-tab-body-content {
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
+
+.mat-tab-list {
+  background-color: lightblue;
+}
 
 .mat-icon {
   vertical-align: middle;
@@ -31,5 +40,47 @@ button {
   display: flexbox;
   align-items: center;
   line-height: 3;
+  color: blue;
 
+}
+
+/* #list {
+  display: block ;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 10px;
+
+} */
+#listTitle {
+  display: block ;
+  text-align: center;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: lightblue;
+  width: 50%;
+  height: min-content;
+  color: blue;
+}
+
+
+#menu {
+  padding: 10px 10px;
+  display: block;
+  text-align: center;
+  border-bottom: lightgray solid 1px;
+}
+
+#btnRight, #btnLeft {
+  text-align: center;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+
+h3 {
+  width: 50%;
+  background-color: cadetblue;
 }

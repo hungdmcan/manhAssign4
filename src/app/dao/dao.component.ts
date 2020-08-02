@@ -16,9 +16,10 @@ export class DaoComponent implements OnInit {
   @Input() carCatNew: Car[];
   @Input() carCatUsed: Car[];
   outArea: string;
+  outArea1: string;
   catChoice: Car[];
   i = -1;
-
+  outAreaStyle = `style=color: "powderblue"`;
   constructor() { }
 
   ngOnInit(): void {
@@ -30,19 +31,22 @@ export class DaoComponent implements OnInit {
     case 'New': this.catChoice = this.carCatNew; break;
     case 'Used': this.catChoice = this.carCatUsed; break;
     }
-    this.outArea = `<h3> ${cat} Car List</h3>`;
-    this.outArea += `<table><tr>
-                        <th>Make</th><th>Type</th><th>Engine</th><th>Cost</th><th>Color</th>
+    this.outArea1 = `<h3> ${cat} Car List</h3>`;
+    this.outArea = '';
+    this.outArea += `<table ${this.outAreaStyle}><tr>
+                    <th>Ord.</th><th>Make</th><th>Type</th><th>Engine</th><th>Cost</th><th>Color</th>
                     </tr>`;
+    let count = 0;
     for (const cls of this.catChoice) {
       this.outArea += `<tr>
+                      <td>${++count}</td>
                       <td><strong> ${cls.make} </strong></td>
                       <td> ${cls.type} </td>
                       <td> ${cls.engine} </td>
                       <td> ${cls.cost} </td>
                       <td> ${cls.color} </td>
                       </tr>`; }
-
+    this.outArea += `</table>`;
   }
 
   onClickMe(i: number): void {

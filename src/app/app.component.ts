@@ -13,7 +13,7 @@ export class AppComponent {
   myBio: MyBio =
   { name: 'Manh Hung Dao (Mike)',
   studentID: '991557299',
-  imageLocation: '../assets/images/vietnam.png',
+  imageLocation: './assets/images/vietnam.png',
   status: 'Junior'};
 
   cat1 = cars.cars.New;

@@ -1,1 +1,18 @@
-h2 {text-align: right;}
+p {
+  font-size: 1.2em;
+  font-style: italic;
+  font-weight: bolder;
+  margin: 0em;
+  width: 23em;
+  color: #546e7a;
+  text-align: center;
+
+}
+#top {
+  border-top: #78909c solid;
+  margin-top: 1.5em;
+}
+
+.hart{
+  color: #e91e63;
+}
